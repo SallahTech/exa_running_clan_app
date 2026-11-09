@@ -7,6 +7,14 @@ run. Built from the design handoff in
 
 **Expo (React Native) + TypeScript + Supabase.** One codebase for iOS, Android and web.
 
+<p>
+  <img src="docs/screenshots/welcome.png" width="260" alt="Welcome screen: Girne, North Cyprus, est. 2025 — two runs a week, nobody alone">
+  <img src="docs/screenshots/sign-in.png" width="260" alt="Sign-in screen with email and password">
+  <img src="docs/screenshots/home.png" width="260" alt="Home screen: countdown to Wednesday Trackday and the coming runs">
+</p>
+
+Welcome, sign in and Home, with the demo data from `supabase/seed.sql`.
+
 ---
 
 ## Setup
@@ -188,3 +196,9 @@ seed departs from them so the screens agree with each other:
 
 - Its bar chart shows 34 km for the current week while the panel beside it says
   24.6. Here every number is derived from seeded activity, so they match.
+
+---
+
+## License
+
+[MIT](LICENSE)
