@@ -54,3 +54,6 @@ scripts/photos/
 
 # original download of the design handoff, unpacked in design_handoff_exa_running_clan/
 *.zip
+
+# Claude Code settings (personal to each developer)
+.claude/
