@@ -1,17 +1,21 @@
 {
   "expo": {
-    "name": "exa-app",
-    "slug": "exa-app",
+    "name": "Exa Running Clan",
+    "slug": "exa-running-clan",
+    "scheme": "exaclan",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#000000",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "cy.exaclan.app"
     },
     "android": {
+      "package": "cy.exaclan.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0B0B0D",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -19,7 +23,35 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-font",
+      "expo-web-browser",
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Exa Running Clan uses your photos so you can share a picture with a post.",
+          "cameraPermission": "Exa Running Clan uses your camera so you can take a picture for a post."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/exa-logo.png",
+          "backgroundColor": "#000000",
+          "imageWidth": 200
+        }
+      ],
+      "expo-localization",
+      "expo-notifications"
+    ],
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
