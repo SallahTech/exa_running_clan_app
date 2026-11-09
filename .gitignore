@@ -39,3 +39,18 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# local env
+.env
+
+# playwright mcp output
+.playwright-mcp/
+
+# IDE
+.idea/
+
+# generated sample imagery — regenerate with scripts/generate-photos.mjs
+scripts/photos/
+
+# original download of the design handoff, unpacked in design_handoff_exa_running_clan/
+*.zip
